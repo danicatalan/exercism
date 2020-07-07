@@ -3,7 +3,7 @@
 - [x] hello-world
   - [x] space-age
 - [x] two-fer
-  - [ ] leap
+  - [x] leap
   - [ ] triangle
   - [ ] proverb
 - [ ] hamming

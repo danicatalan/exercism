@@ -5,24 +5,43 @@
 // https://golang.org/doc/effective_go.html#commentary
 package triangle
 
-
-// Notice KindFromSides() returns this type. Pick a suitable data type.
-type Kind
-
-const (
-    // Pick values for the following identifiers used by the test program.
-    NaT // not a triangle
-    Equ // equilateral
-    Iso // isosceles
-    Sca // scalene
+import (
+	"math"
 )
 
-// KindFromSides should have a comment documenting it.
+// Kind abstracts different types of triangles.
+type Kind int
+
+const (
+	// NaT Not a triangle.
+	NaT = iota
+	// Equ An equilateral triangle has all three sides the same length.
+	Equ
+	// Iso An isosceles triangle has at least two sides the same length.
+	Iso
+	// Sca A scalene triangle has all sides of different lengths.
+	Sca
+)
+
+// KindFromSides returns the kind of triangle built by the parameters provided,
+// or if the parameters don't build a triangle at all.
 func KindFromSides(a, b, c float64) Kind {
-	// Write some code here to pass the test suite.
-	// Then remove all the stock comments.
-	// They're here to help you get started but they only clutter a finished solution.
-	// If you leave them in, reviewers may protest!
-	var k Kind
-	return k
+	sides := []float64{a, b, c}
+
+	for _, s := range sides {
+		if s <= 0 || math.IsNaN(s) || math.IsInf(s, 0) {
+			return NaT
+		}
+		if sides[0]+sides[1]+sides[2]-s < s {
+			return NaT
+		}
+	}
+
+	if sides[0] == sides[1] && sides[0] == sides[2] {
+		return Equ
+	}
+	if sides[0] == sides[1] || sides[0] == sides[2] || sides[1] == sides[2] {
+		return Iso
+	}
+	return Sca
 }

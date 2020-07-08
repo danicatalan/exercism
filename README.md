@@ -4,6 +4,6 @@
   - [x] space-age
 - [x] two-fer
   - [x] leap
-  - [ ] triangle
+  - [x] triangle
   - [ ] proverb
 - [ ] hamming

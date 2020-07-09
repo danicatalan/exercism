@@ -5,5 +5,5 @@
 - [x] two-fer
   - [x] leap
   - [x] triangle
-  - [ ] proverb
+  - [x] proverb
 - [ ] hamming

@@ -6,4 +6,4 @@
   - [x] leap
   - [x] triangle
   - [x] proverb
-- [ ] hamming
+- [x] hamming

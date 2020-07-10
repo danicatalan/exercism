@@ -7,3 +7,6 @@
   - [x] triangle
   - [x] proverb
 - [x] hamming
+  - [ ] nucleotide-count
+  - [ ] rna-transcription
+- [ ] raindrops

@@ -1,19 +1,33 @@
 package dna
 
-// Histogram is a mapping from nucleotide to its count in given DNA.
-// Choose a suitable data type.
-type Histogram
+import (
+	"errors"
+)
 
-// DNA is a list of nucleotides. Choose a suitable data type.
-type DNA
+// Histogram is a mapping from nucleotide to its count in given DNA.
+type Histogram map[rune]int
+
+// DNA is a list of nucleotides.
+type DNA string
+
+const (
+	validNucleotides = "ACGT"
+)
 
 // Counts generates a histogram of valid nucleotides in the given DNA.
 // Returns an error if d contains an invalid nucleotide.
-///
-// Counts is a method on the DNA type. A method is a function with a special receiver argument.
-// The receiver appears in its own argument list between the func keyword and the method name.
-// Here, the Counts method has a receiver of type DNA named d.
-func (d DNA) Counts() (Histogram, error) {
-	var h Histogram
+func (d DNA) Counts() (h Histogram, err error) {
+	h = make(Histogram)
+
+	for _, n := range validNucleotides {
+		h[n] = 0
+	}
+
+	for _, c := range d {
+		if _, exists := h[c]; !exists {
+			return h, errors.New("Found invalid nucleotide")
+		}
+		h[c]++
+	}
 	return h, nil
 }

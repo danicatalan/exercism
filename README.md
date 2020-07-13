@@ -10,3 +10,7 @@
   - [x] nucleotide-count
   - [x] rna-transcription
 - [x] raindrops
+  - [ ] accumulate
+  - [ ] roman-numerals
+  - [ ] straing
+- [ ] scrabble-score

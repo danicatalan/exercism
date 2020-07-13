@@ -8,5 +8,5 @@
   - [x] proverb
 - [x] hamming
   - [x] nucleotide-count
-  - [ ] rna-transcription
+  - [x] rna-transcription
 - [ ] raindrops

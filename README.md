@@ -9,4 +9,4 @@
 - [x] hamming
   - [x] nucleotide-count
   - [x] rna-transcription
-- [ ] raindrops
+- [x] raindrops

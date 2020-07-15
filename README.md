@@ -11,6 +11,6 @@
   - [x] rna-transcription
 - [x] raindrops
   - [x] accumulate
-  - [ ] roman-numerals
+  - [x] roman-numerals
   - [ ] straing
 - [ ] scrabble-score

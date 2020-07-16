@@ -12,5 +12,5 @@
 - [x] raindrops
   - [x] accumulate
   - [x] roman-numerals
-  - [ ] straing
+  - [x] straing
 - [ ] scrabble-score

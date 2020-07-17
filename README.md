@@ -14,3 +14,6 @@
   - [x] roman-numerals
   - [x] straing
 - [x] scrabble-score
+  - [ ] etl
+  - [ ] protein-translation
+- [ ] isogram

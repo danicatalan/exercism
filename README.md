@@ -13,4 +13,4 @@
   - [x] accumulate
   - [x] roman-numerals
   - [x] straing
-- [ ] scrabble-score
+- [x] scrabble-score

@@ -15,5 +15,5 @@
   - [x] straing
 - [x] scrabble-score
   - [x] etl
-  - [ ] protein-translation
+  - [x] protein-translation
 - [ ] isogram

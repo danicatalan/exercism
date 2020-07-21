@@ -17,3 +17,9 @@
   - [x] etl
   - [x] protein-translation
 - [x] isogram
+  - [ ] anagram
+  - [ ] pangram
+  - [ ] reverse-string
+  - [ ] run-length-encoding
+  - [ ] word-count
+- [ ] difference-of-squares

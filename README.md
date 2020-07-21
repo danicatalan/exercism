@@ -16,4 +16,4 @@
 - [x] scrabble-score
   - [x] etl
   - [x] protein-translation
-- [ ] isogram
+- [x] isogram

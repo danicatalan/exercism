@@ -17,7 +17,7 @@
   - [x] etl
   - [x] protein-translation
 - [x] isogram
-  - [ ] anagram
+  - [x] anagram
   - [ ] pangram
   - [ ] reverse-string
   - [ ] run-length-encoding

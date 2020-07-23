@@ -18,7 +18,7 @@
   - [x] protein-translation
 - [x] isogram
   - [x] anagram
-  - [ ] pangram
+  - [x] pangram
   - [ ] reverse-string
   - [ ] run-length-encoding
   - [ ] word-count

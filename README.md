@@ -19,7 +19,7 @@
 - [x] isogram
   - [x] anagram
   - [x] pangram
-  - [ ] reverse-string
+  - [x] reverse-string
   - [ ] run-length-encoding
   - [ ] word-count
 - [ ] difference-of-squares

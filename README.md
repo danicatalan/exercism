@@ -20,6 +20,6 @@
   - [x] anagram
   - [x] pangram
   - [x] reverse-string
-  - [ ] run-length-encoding
+  - [x] run-length-encoding
   - [ ] word-count
 - [ ] difference-of-squares

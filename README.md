@@ -21,5 +21,5 @@
   - [x] pangram
   - [x] reverse-string
   - [x] run-length-encoding
-  - [ ] word-count
+  - [x] word-count
 - [ ] difference-of-squares

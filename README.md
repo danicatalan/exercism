@@ -22,4 +22,4 @@
   - [x] reverse-string
   - [x] run-length-encoding
   - [x] word-count
-- [ ] difference-of-squares
+- [x] difference-of-squares

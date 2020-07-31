@@ -23,7 +23,7 @@
   - [x] run-length-encoding
   - [x] word-count
 - [x] difference-of-squares
-  - [ ] sum-of-multiples
+  - [x] sum-of-multiples
   - [ ] pythagorean-triplet
   - [ ] largest-series-product
   - [ ] nth-prime

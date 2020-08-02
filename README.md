@@ -24,7 +24,7 @@
   - [x] word-count
 - [x] difference-of-squares
   - [x] sum-of-multiples
-  - [ ] pythagorean-triplet
+  - [x] pythagorean-triplet
   - [ ] largest-series-product
   - [ ] nth-prime
   - [ ] isbn-verifier

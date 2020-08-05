@@ -25,7 +25,7 @@
 - [x] difference-of-squares
   - [x] sum-of-multiples
   - [x] pythagorean-triplet
-  - [ ] largest-series-product
+  - [x] largest-series-product
   - [ ] nth-prime
   - [ ] isbn-verifier
 - [ ] luhn

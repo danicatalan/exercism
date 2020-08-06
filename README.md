@@ -26,6 +26,6 @@
   - [x] sum-of-multiples
   - [x] pythagorean-triplet
   - [x] largest-series-product
-  - [ ] nth-prime
+  - [x] nth-prime
   - [ ] isbn-verifier
 - [ ] luhn

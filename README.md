@@ -27,5 +27,5 @@
   - [x] pythagorean-triplet
   - [x] largest-series-product
   - [x] nth-prime
-  - [ ] isbn-verifier
+  - [x] isbn-verifier
 - [ ] luhn

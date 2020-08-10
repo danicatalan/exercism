@@ -28,4 +28,4 @@
   - [x] largest-series-product
   - [x] nth-prime
   - [x] isbn-verifier
-- [ ] luhn
+- [x] luhn

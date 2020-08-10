@@ -29,3 +29,9 @@
   - [x] nth-prime
   - [x] isbn-verifier
 - [x] luhn
+  - [ ] crypto-square
+  - [ ] atbash-cipher
+  - [ ] diffie-hellman
+  - [ ] simple-cipher
+  - [ ] rotational-cipher
+- [ ] grains

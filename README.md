@@ -29,7 +29,7 @@
   - [x] nth-prime
   - [x] isbn-verifier
 - [x] luhn
-  - [ ] crypto-square
+  - [x] crypto-square
   - [ ] atbash-cipher
   - [ ] diffie-hellman
   - [ ] simple-cipher

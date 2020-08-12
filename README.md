@@ -30,7 +30,7 @@
   - [x] isbn-verifier
 - [x] luhn
   - [x] crypto-square
-  - [ ] atbash-cipher
+  - [x] atbash-cipher
   - [ ] diffie-hellman
   - [ ] simple-cipher
   - [ ] rotational-cipher

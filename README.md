@@ -34,4 +34,4 @@
   - [ ] diffie-hellman
   - [ ] simple-cipher
   - [ ] rotational-cipher
-- [ ] grains
+- [x] grains

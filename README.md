@@ -35,3 +35,10 @@
   - [ ] simple-cipher
   - [ ] rotational-cipher
 - [x] grains
+  - [ ] secret-handshake
+  - [ ] sieve
+  - [ ] perfect-numbers
+  - [ ] allergies
+  - [ ] all-your-base
+  - [ ] variable-length-quantity
+- [ ] clock

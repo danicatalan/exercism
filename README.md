@@ -35,7 +35,7 @@
   - [ ] simple-cipher
   - [ ] rotational-cipher
 - [x] grains
-  - [ ] secret-handshake
+  - [x] secret-handshake
   - [ ] sieve
   - [ ] perfect-numbers
   - [ ] allergies

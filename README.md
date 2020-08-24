@@ -2,7 +2,7 @@
 
 ## Section 1
 - [x] hello-world
-  - [ ] gigasecond
+  - [x] gigasecond
   - [x] space-age
 
 ## Section 2

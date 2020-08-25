@@ -56,7 +56,7 @@
 - [x] grains
   - [x] secret-handshake
   - [x] sieve
-  - [ ] perfect-numbers
+  - [x] perfect-numbers
   - [ ] allergies
   - [ ] all-your-base
   - [ ] variable-length-quantity

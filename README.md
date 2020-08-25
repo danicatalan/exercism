@@ -57,7 +57,7 @@
   - [x] secret-handshake
   - [x] sieve
   - [x] perfect-numbers
-  - [ ] allergies
+  - [x] allergies
   - [ ] all-your-base
   - [ ] variable-length-quantity
 

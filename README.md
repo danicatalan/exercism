@@ -62,4 +62,4 @@
   - [ ] variable-length-quantity
 
 ## Section 10
-- [ ] clock
+- [x] clock

@@ -63,3 +63,11 @@
 
 ## Section 10
 - [x] clock
+  - [ ] phone-number
+  - [ ] pig-latin
+  - [ ] prime-factors
+  - [ ] armstrong-numbers
+  - [ ] meetup
+
+## Section 11
+- [ ] parallel-letter-frequency

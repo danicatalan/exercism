@@ -1,7 +1,5 @@
 package letter
 
-import "sync"
-
 // FreqMap records the frequency of each rune in a given text.
 type FreqMap map[rune]int
 
@@ -18,24 +16,19 @@ func Frequency(s string) FreqMap {
 // ConcurrentFrequency counts the frequency of each rune in a given text and
 // returns this data as a FreqMap.
 func ConcurrentFrequency(input []string) FreqMap {
-	m := FreqMap{}
+	m, ch := FreqMap{}, make(chan FreqMap)
 
-	var wg sync.WaitGroup
-	var mutex sync.Mutex
-
-	for i, s := range input {
-		wg.Add(1)
-		go func(s string, i int) {
-			newMap := Frequency(s)
-			mutex.Lock()
-			for k, v := range newMap {
-				m[k] += v
-			}
-			mutex.Unlock()
-			wg.Done()
-		}(s, i)
+	for _, s := range input {
+		go func(s string) {
+			ch <- Frequency(s)
+		}(s)
 	}
-	wg.Wait()
+
+	for range input {
+		for k, v := range <-ch {
+			m[k] += v
+		}
+	}
 
 	return m
 }
@@ -46,6 +39,6 @@ benchmark
 	goarch: amd64
 	pkg: letter
 	cpu: Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz
-	BenchmarkSequentialFrequency-8   	   61051	     19291 ns/op
-	BenchmarkConcurrentFrequency-8   	   57841	     20922 ns/op
+	BenchmarkSequentialFrequency-8   	   61509	     19434 ns/op
+	BenchmarkConcurrentFrequency-8   	   60910	     19245 ns/op
 */

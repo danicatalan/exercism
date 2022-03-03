@@ -17,20 +17,27 @@ const (
 
 // Schedule returns a time.Time from a string containing a date
 func Schedule(date string) time.Time {
-	t, _ := time.Parse(LAYOUT_SHORT, date)
-	return t
+	for _, layout := range []string{
+		LAYOUT_SHORT,
+		LAYOUT_LONG,
+		LAYOUT_FULL,
+	} {
+		t, err := time.Parse(layout, date)
+		if err == nil {
+			return t
+		}
+	}
+	return time.Time{}
 }
 
 // HasPassed returns whether a date has passed
 func HasPassed(date string) bool {
-	t, _ := time.Parse(LAYOUT_LONG, date)
-	return time.Now().After(t)
+	return Schedule(date).Before(time.Now())
 }
 
 // IsAfternoonAppointment returns whether a time is in the afternoon
 func IsAfternoonAppointment(date string) bool {
-	t, _ := time.Parse(LAYOUT_FULL, date)
-	return t.Hour() >= AFTERNOON_STARTS && t.Hour() < AFTERNOON_ENDS
+	return Schedule(date).Hour() >= AFTERNOON_STARTS && Schedule(date).Hour() < AFTERNOON_ENDS
 }
 
 // Description returns a formatted string of the appointment time
